@@ -1,0 +1,260 @@
+@prefix ns1: <http://kai.cs.vu.nl/2024/situated-minor-project/hotel#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology
+ ] .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#diet
+ns1:diet rdf:type owl:ObjectProperty ;
+         rdfs:range ns1:Diet ;
+         rdfs:label "supports diet" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#hasFacility
+ns1:hasFacility rdf:type owl:ObjectProperty ;
+                rdfs:range ns1:Facility ;
+                rdfs:label "has facility" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#inCity
+ns1:inCity rdf:type owl:ObjectProperty ;
+           rdfs:range ns1:City ;
+           rdfs:label "in city" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#inCountry
+ns1:inCountry rdf:type owl:ObjectProperty ;
+              rdfs:range ns1:Country ;
+              rdfs:label "in country" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#location
+ns1:location rdf:type owl:ObjectProperty ;
+             rdfs:label "location" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#nationality
+ns1:nationality rdf:type owl:ObjectProperty ;
+                rdfs:label "nationality" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#nextTo
+ns1:nextTo rdf:type owl:ObjectProperty ;
+           rdfs:label "next to" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#restaurantType
+ns1:restaurantType rdf:type owl:ObjectProperty ;
+                   rdfs:domain ns1:Restaurant ;
+                   rdfs:label "type of restaurant" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#userRating
+ns1:userRating rdf:type owl:ObjectProperty ;
+               rdfs:range ns1:UserRating ;
+               rdfs:label "user rating" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Airport
+ns1:Airport rdf:type owl:Class ;
+            rdfs:label "Airport" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Camping_Site
+ns1:Camping_Site rdf:type owl:Class ;
+                 rdfs:label "Camping Site" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#City
+ns1:City rdf:type owl:Class ;
+         rdfs:label "City" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Country
+ns1:Country rdf:type owl:Class ;
+            rdfs:label "Country" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Diet
+ns1:Diet rdf:type owl:Class ;
+         rdfs:label "Diet" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Facility
+ns1:Facility rdf:type owl:Class ;
+             rdfs:label "Facility" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Hostel
+ns1:Hostel rdf:type owl:Class ;
+           rdfs:label "Hostel" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Hotel
+ns1:Hotel rdf:type owl:Class ;
+          rdfs:label "Hotel" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Landmark
+ns1:Landmark rdf:type owl:Class ;
+             rdfs:label "Landmark" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Museum
+ns1:Museum rdf:type owl:Class ;
+           rdfs:label "Museum" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Nationality
+ns1:Nationality rdf:type owl:Class ;
+                owl:equivalentClass [ rdf:type owl:Restriction ;
+                                      owl:onProperty [ owl:inverseOf ns1:nationality
+                                                     ] ;
+                                      owl:someValuesFrom owl:Thing
+                                    ] ;
+                rdfs:label "Nationality" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Neighbourhood
+ns1:Neighbourhood rdf:type owl:Class ;
+                  rdfs:label "Neighbourhood" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#PublicTransport
+ns1:PublicTransport rdf:type owl:Class ;
+                    rdfs:label "Public Transport" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Restaurant
+ns1:Restaurant rdf:type owl:Class ;
+               rdfs:label "Restaurant" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#RestaurantType
+ns1:RestaurantType rdf:type owl:Class ;
+                   rdfs:label "Restaurant Type" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#TouristAttraction
+ns1:TouristAttraction rdf:type owl:Class ;
+                      rdfs:label "Tourist Attraction" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Trainstation
+ns1:Trainstation rdf:type owl:Class ;
+                 rdfs:subClassOf ns1:PublicTransport ;
+                 rdfs:label "Trainstation" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#UserRating
+ns1:UserRating rdf:type owl:Class ;
+               rdfs:label "User Rating" .
+
+
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#WaterBody
+ns1:WaterBody rdf:type owl:Class ;
+              rdfs:label "Body of Water" .
+
+
+###  http://www.wikidata.org/entity/Q12284
+<http://www.wikidata.org/entity/Q12284> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://www.wikidata.org/entity/Q355304> ;
+                                        rdfs:label "Canal" .
+
+
+###  http://www.wikidata.org/entity/Q125941113
+<http://www.wikidata.org/entity/Q125941113> rdf:type owl:Class ;
+                                            rdfs:subClassOf <http://www.wikidata.org/entity/Q4022> ;
+                                            rdfs:label "Gold River" .
+
+
+###  http://www.wikidata.org/entity/Q1322134
+<http://www.wikidata.org/entity/Q1322134> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.wikidata.org/entity/Q39594> ;
+                                          rdfs:label "Gulf" .
+
+
+###  http://www.wikidata.org/entity/Q165
+<http://www.wikidata.org/entity/Q165> rdf:type owl:Class ;
+                                      rdfs:subClassOf ns1:WaterBody ;
+                                      rdfs:label "Sea" .
+
+
+###  http://www.wikidata.org/entity/Q166620
+<http://www.wikidata.org/entity/Q166620> rdf:type owl:Class ;
+                                         rdfs:subClassOf ns1:WaterBody ;
+                                         rdfs:label "Drainage Basin" .
+
+
+###  http://www.wikidata.org/entity/Q187223
+<http://www.wikidata.org/entity/Q187223> rdf:type owl:Class ;
+                                         rdfs:subClassOf ns1:WaterBody ;
+                                         rdfs:label "Lagoon" .
+
+
+###  http://www.wikidata.org/entity/Q1973404
+<http://www.wikidata.org/entity/Q1973404> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://www.wikidata.org/entity/Q165> ;
+                                          rdfs:label "Adjacent Sea" .
+
+
+###  http://www.wikidata.org/entity/Q355304
+<http://www.wikidata.org/entity/Q355304> rdf:type owl:Class ;
+                                         rdfs:subClassOf ns1:WaterBody ;
+                                         rdfs:label "Watercourse" .
+
+
+###  http://www.wikidata.org/entity/Q39594
+<http://www.wikidata.org/entity/Q39594> rdf:type owl:Class ;
+                                        rdfs:label "Bay" .
+
+
+###  http://www.wikidata.org/entity/Q4022
+<http://www.wikidata.org/entity/Q4022> rdf:type owl:Class ;
+                                       rdfs:subClassOf <http://www.wikidata.org/entity/Q355304> ;
+                                       rdfs:label "River" .
+
+
+###  http://www.wikidata.org/entity/Q573344
+<http://www.wikidata.org/entity/Q573344> rdf:type owl:Class ;
+                                         rdfs:subClassOf <http://www.wikidata.org/entity/Q355304> ;
+                                         rdfs:label "Main Stream" .
+
+
+###  http://www.wikidata.org/entity/Q9430
+<http://www.wikidata.org/entity/Q9430> rdf:type owl:Class ;
+                                       rdfs:subClassOf ns1:WaterBody ;
+                                       rdfs:label "Ocean" .
+
+
+###  http://www.wikidata.org/entity/Q986177
+<http://www.wikidata.org/entity/Q986177> rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.co-ode.org/ontologies/ont.owl#Bobby
+<http://www.co-ode.org/ontologies/ont.owl#Bobby> rdf:type owl:NamedIndividual ;
+                                                 ns1:nationality <http://www.co-ode.org/ontologies/ont.owl#Italian> .
+
+
+###  http://www.co-ode.org/ontologies/ont.owl#Italian
+<http://www.co-ode.org/ontologies/ont.owl#Italian> rdf:type owl:NamedIndividual .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
