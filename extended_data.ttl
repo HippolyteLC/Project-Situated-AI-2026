@@ -15,21 +15,26 @@
 
 ###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#diet
 ns1:diet rdf:type owl:ObjectProperty ;
+         rdfs:range ns1:Diet ;
          rdfs:label "supports diet" .
 
 
 ###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#hasFacility
 ns1:hasFacility rdf:type owl:ObjectProperty ;
+                rdfs:domain ns1:Accommodation ;
+                rdfs:range ns1:Facility ;
                 rdfs:label "has facility" .
 
 
 ###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#inCity
 ns1:inCity rdf:type owl:ObjectProperty ;
+           rdfs:range ns1:City ;
            rdfs:label "in city" .
 
 
 ###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#inCountry
 ns1:inCountry rdf:type owl:ObjectProperty ;
+              rdfs:range ns1:Country ;
               rdfs:label "in country" .
 
 
@@ -40,6 +45,7 @@ ns1:location rdf:type owl:ObjectProperty ;
 
 ###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#nationality
 ns1:nationality rdf:type owl:ObjectProperty ;
+                rdfs:range ns1:Nationality ;
                 rdfs:label "nationality" .
 
 
@@ -50,11 +56,14 @@ ns1:nextTo rdf:type owl:ObjectProperty ;
 
 ###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#restaurantType
 ns1:restaurantType rdf:type owl:ObjectProperty ;
+                   rdfs:domain ns1:Restaurant ;
+                   rdfs:range ns1:RestaurantType ;
                    rdfs:label "type of restaurant" .
 
 
 ###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#userRating
 ns1:userRating rdf:type owl:ObjectProperty ;
+               rdfs:range ns1:UserRating ;
                rdfs:label "user rating" .
 
 
