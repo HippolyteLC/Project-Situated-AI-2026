@@ -2,3 +2,6 @@ graphRAG with KB and ontology
 
 can we create new super classes for our ontology, or should we only add axioms 
 with the provided classes/ properties ?
+
+
+Does it matter owlapy or owlready2

@@ -68,6 +68,10 @@ ns1:userRating rdf:type owl:ObjectProperty ;
 #    Classes
 #################################################################
 
+###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Accommodation
+ns1:Accommodation rdf:type owl:Class .
+
+
 ###  http://kai.cs.vu.nl/2024/situated-minor-project/hotel#Airport
 ns1:Airport rdf:type owl:Class ;
             rdfs:label "Airport" .

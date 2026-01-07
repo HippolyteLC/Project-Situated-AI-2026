@@ -11,3 +11,15 @@ Query: Accommodation and (inCountry value Italy) and AllowsPets and (nextTo some
 Query: Hostel and (inCountry value Germany) and HasFreeWiFi and (near some PublicTransport) and (walkingDistance some (ArtGallery or Museum))
 
 The examples above include some common logical constructs such as and, or, some, and value. However, you are not limited to these. You can also incorporate other constructs like not, exactly, sameAs, or hasValue, or any others that align with the requirements of your ontology and dialogues. Use whichever constructs make the most sense for effectively representing and reasoning with your data.
+
+Five simple dialogues (1-3 constructs)
+
+1. Find me an accomodation in Portugal which is near a Landmark.
+
+2. I want to go to a Camping which has free Wifi and near Public Transport
+
+3. Find me all places with vegan food. 
+
+4. Find me all accomodations rated higher than 4 stars. 
+
+5. Restaurants near river. 
