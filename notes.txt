@@ -4,4 +4,11 @@ can we create new super classes for our ontology, or should we only add axioms
 with the provided classes/ properties ?
 
 
-Does it matter owlapy or owlready2
+Does it matter owlapy or owlready2? 
+
+Can we query against wikidata for countries (or other things) 
+
+The analysis of Q1 should also contain rdfs/ rdf, wikidata information? 
+
+Do we need to query our KG using FL formatted queries, e.g. nextTo some owl:Thing or can we use 
+SPARQL queries? 
