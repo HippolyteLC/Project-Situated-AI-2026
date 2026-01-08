@@ -1,14 +1,23 @@
 graphRAG with KB and ontology
 
-can we create new super classes for our ontology, or should we only add axioms 
+Can we create new super classes for our ontology, or should we only add axioms 
 with the provided classes/ properties ?
 
 
-Does it matter owlapy or owlready2? 
+Does it matter owlapy or owlready2?
+- Both are ok
 
-Can we query against wikidata for countries (or other things) 
+Can we query against wikidata for countries (or other things)
+- Yes
 
-The analysis of Q1 should also contain rdfs/ rdf, wikidata information? 
+The analysis of Q1 should also contain rdfs/ rdf, wikidata information?
+- Not necessarily but it's good to have in report - our analysis as of right now is perfectly fine
+and doesn't miss out on anything. Although I did hear today in the practical session that some people added
+extra visualizations (e.g. based on rating) for the analysis. Might be good to add for the report.
 
 Do we need to query our KG using FL formatted queries, e.g. nextTo some owl:Thing or can we use 
-SPARQL queries? 
+SPARQL queries?
+- SPARQL is fine to use. In fact I believe the TA answered that both are okay.
+Although today I changed the part for Q3 as it wasn't complete according to the TA, and
+the best way to apply the change he requested is to query not via SPARQL, but with something more FL-like.
+(so the current version doesn't use SPARQL anyway)
