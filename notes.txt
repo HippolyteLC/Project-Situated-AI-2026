@@ -1,14 +1,14 @@
 graphRAG with KB and ontology
 
 Can we create new super classes for our ontology, or should we only add axioms 
-with the provided classes/ properties ?
-
+with the provided classes/properties?
+- Yes, everything is free for the ontology. Adding classes, instances, properties are encouraged.
 
 Does it matter owlapy or owlready2?
-- Both are ok
+- Both are ok.
 
 Can we query against wikidata for countries (or other things)
-- Yes
+- Yes, and also DBpedia is fine too to retrieve namespaces or countries etc.
 
 The analysis of Q1 should also contain rdfs/ rdf, wikidata information?
 - Not necessarily but it's good to have in report - our analysis as of right now is perfectly fine
