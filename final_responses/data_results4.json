@@ -1,0 +1,122 @@
+[
+    {
+        "dialogue": "Find me an accomodation that is in Portugal and near a landmark.",
+        "initial query": "Accommodation and (inCountry value Portugal) and (nextTo some Landmark)",
+        "final query": "",
+        "knowledge": [],
+        "summary response": "**Specified Criteria:**\n\n* Accommodation\n* In Portugal\n* Near a landmark\n\n**Results:**\n\nNo matches found.\n\n**Summary:** No matches found for the specified criteria of accommodation in Portugal near a landmark."
+    },
+    {
+        "dialogue": "I want to go to a camping by a river which is rated 5_stars.",
+        "initial query": "Camping_Site and (nextTo some River) and (userRating some 5_stars)",
+        "final query": "",
+        "knowledge": [],
+        "summary response": "**Results of Knowledge Graph Query**\n\n**Specified Criteria:**\n- Camping by a river\n- Rated 5 stars\n\n**Results:**\nNo matches found.\n\n**Summary:** No camping locations with a rating of 5 stars near a river were found in the retrieved knowledge graph."
+    },
+    {
+        "dialogue": "What are arabic restaurants that serve fast food.",
+        "initial query": "Restaurant and (nationality value Arabic) and (restaurantType value FastFood)",
+        "final query": "Restaurant and (nationality value Arabic) and (restaurantType value FastFood)",
+        "knowledge": [
+            "restaurant277",
+            "restaurant106",
+            "restaurant299",
+            "restaurant279",
+            "restaurant153",
+            "accomodation437",
+            "restaurant120",
+            "restaurant225",
+            "accomodation542"
+        ],
+        "summary response": "**Results of Knowledge Graph Query**\n\n**Specified Criteria:**\n\n* Restaurant\n* Nationality value Arabic\n* RestaurantType value FastFood\n\n**Results:**\n\n['restaurant277', 'restaurant106', 'restaurant299', 'restaurant279', 'restaurant153']\n\n**Summary:** Five matches were found for the criteria \"Arabic restaurants that serve fast food.\""
+    },
+    {
+        "dialogue": "Find me all accomodations rated 5 stars.",
+        "initial query": "Accommodation and (userRating some 5_stars)",
+        "final query": "",
+        "knowledge": [],
+        "summary response": "**Specified Criteria:**\n\n* Accommodations rated 5 stars\n\n**Results:**\n\nNo matches found.\n\n**Summary:** No matches found for the query \"Find me all accomodations rated 5 stars\"."
+    },
+    {
+        "dialogue": "Hotels near the sea.",
+        "initial query": "Hotel and (nextTo some Sea)",
+        "final query": "Hotel and (nextTo some http://www.wikidata.org/entity/Q165)",
+        "knowledge": [
+            "accomodation647",
+            "accomodation823",
+            "accomodation928",
+            "accomodation431",
+            "accomodation311",
+            "accomodation652",
+            "accomodation649",
+            "accomodation654",
+            "accomodation284",
+            "accomodation192",
+            "accomodation854",
+            "accomodation287",
+            "accomodation342",
+            "accomodation157",
+            "accomodation131",
+            "accomodation87",
+            "accomodation886",
+            "accomodation842",
+            "accomodation505",
+            "accomodation362",
+            "accomodation325",
+            "accomodation535",
+            "accomodation690"
+        ],
+        "summary response": "**Results of Knowledge Graph Query**\n\n**Specified Criteria:**\n\n* Hotel\n* Next to some http://www.wikidata.org/entity/Q165 (sea)\n\n**Results:**\n\n['accomodation647', 'accomodation823', 'accomodation928', 'accomodation431', 'accomodation311', 'accomodation652', 'accomodation649', 'accomodation654', 'accomodation284', 'accomodation192', 'accomodation854', 'accomodation287', 'accomodation342', 'accomodation157', 'accomodation131', 'accomodation87', 'accomodation886', 'accomodation842', 'accomodation505', 'accomodation362', 'accomodation325', 'accomodation535', 'accomodation690']\n\n**Summary:** 24 matches found for hotels near the sea."
+    },
+    {
+        "dialogue": "I want a hotel with a sauna and a swimming pool, preferrably in Portugal near a train station.",
+        "initial query": "Hotel and (hasFacility value Sauna) and (hasFacility value Swimming_Pool) and (inCountry value Portugal) and (nextTo some TrainStation)",
+        "final query": "",
+        "knowledge": [],
+        "summary response": "**Specified Criteria:**\n\n* Hotel\n* Sauna\n* Swimming pool\n* Located in Portugal\n* Near a train station\n\n**Results:**\n\nNo matches found.\n\n**Summary:** No hotel matching all specified criteria was found."
+    },
+    {
+        "dialogue": "Find me a hotel that is also a michelin restaurant in France. They should have free parking and a 24h front desk too.",
+        "initial query": "Hotel and (inCountry value France) and (hasFacility value Free_Wifi) and (hasFacility value Parking_Space) and (hasFacility value 24h_front_desk) and (restaurantType some Michelin)",
+        "final query": "",
+        "knowledge": [],
+        "summary response": "**Results**\n\n**Specified Criteria:**\n- Hotel\n- Michelin restaurant\n- France\n- Free parking\n- 24h front desk\n\n**Results:**\nNo matches found.\n\n**Summary:** No matches found for the specified criteria."
+    },
+    {
+        "dialogue": "Can you find me a hostel in Porto with an airport shuttle. It would be nice if it is within walking distance from a museum.",
+        "initial query": "Hostel and (inCity value Porto) and (hasFacility value Airport_Shuttle) and (nextTo some Museum)",
+        "final query": "",
+        "knowledge": [],
+        "summary response": "**Results of Knowledge Graph Query**\n\n**Specified Criteria:**\n- Hostel in Porto\n- Airport shuttle available\n- Within walking distance from a museum\n\n**Results:**\nNo matches found.\n\n**Summary:** No hostel in Porto with an airport shuttle was found within walking distance from a museum."
+    },
+    {
+        "dialogue": "I want a French Restaurant in Turkey right by the sea with free wifi.",
+        "initial query": "Restaurant and (inCountry value Turkey) and (nextTo some Sea) and (hasFacility value Free_Wifi)",
+        "final query": "Restaurant and (inCountry value http://www.wikidata.org/entity/Q43) and (nextTo some http://www.wikidata.org/entity/Q165) and (hasFacility value Free_Wifi)",
+        "knowledge": [
+            "accomodation36",
+            "accomodation842",
+            "accomodation823"
+        ],
+        "summary response": "**Specified Criteria:**\n\n* Restaurant\n* Located in Turkey (nextTo http://www.wikidata.org/entity/Q165)\n* Has free WiFi (hasFacility value Free_Wifi)\n\n**Results:**\n['accomodation36', 'accomodation842', 'accomodation823']\n\n**Summary:** Three matches found for the criteria."
+    },
+    {
+        "dialogue": "I want a hotel that has a restaurant with private bathrooms. Preferrably rated highly.",
+        "initial query": "Hotel and (hasFacility value RestaurantInHotel) and (hasFacility value Private_Bathroom) and (userRating some HighRating)",
+        "final query": "Hotel and (hasFacility value RestaurantInHotel) and (hasFacility value Private_Bathroom) and (userRating some HighRating)",
+        "knowledge": [
+            "accomodation889",
+            "accomodation527",
+            "accomodation678",
+            "accomodation419",
+            "accomodation261",
+            "accomodation451",
+            "accomodation915",
+            "accomodation540",
+            "accomodation601",
+            "accomodation648",
+            "accomodation188"
+        ],
+        "summary response": "**Results of Knowledge Graph Query**\n\n**Specified Criteria:**\n\n* Hotel\n* hasFacility value RestaurantInHotel\n* hasFacility value Private_Bathroom\n* userRating some HighRating\n\n**Results:**\n['accomodation889', 'accomodation915']\n\n**Summary:** Two hotels with a restaurant and private bathrooms were found to have high ratings."
+    }
+]
