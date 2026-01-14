@@ -21,7 +21,7 @@ dialogue2: str = "I want to go to a camping by a river which is rated 5_stars."
 query2: Camping_Site and (nextTo some River) and (userRating value 5_stars)
 
 dialogue3: str = "What are arabic restaurants that serve fast food."
-query3: (nationality value Arabic) and Restaurant and (diet value FastFood)
+query3: (nationality value Arabic) and Restaurant and (restaurantType value FastFood)
 
 dialogue4: str = "Find me all accomodations rated 5 stars."
 query4: Accommodation and (userRating value 5_stars)
