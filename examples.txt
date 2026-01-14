@@ -14,18 +14,35 @@ The examples above include some common logical constructs such as and, or, some,
 
 Five simple dialogues (1-3 constructs)
 
-1. Find me an accomodation in Portugal which is near a Landmark.
-Query: Accomodation and (inCountry value Portugal) and (nextTo some Landmark)
+dialogue1: str = "Find me an accomodation that is in Portugal and near a landmark." #exists in ABox
+query1: Accommodation and (inCountry value Portugal) and (nextTo some Landmark)
 
-2. I want to go to a Camping which has free Wifi and near Public Transport
-Query: Camping and (hasFacility value freeWifi) and (nextTo some PublicTransport)
+dialogue2: str = "I want to go to a camping by a river which is rated 5_stars."
+query2: Camping_Site and (nextTo some River) and (userRating value 5_stars)
 
-3. Find me all places with vegan food.
-Query: Restaurant and (diet Vegan)
+dialogue3: str = "What are arabic restaurants that serve fast food."
+query3: (nationality value Arabic) and Restaurant and (diet value FastFood)
 
-4. Find me all accomodations rated higher than 4 stars. 
-Query: Accomodation and ((userRating value 4) or (userRating value 5))
-!!!
+dialogue4: str = "Find me all accomodations rated 5 stars."
+query4: Accommodation and (userRating value 5_stars)
 
-5. Restaurants near river. 
-Query: Restaurant and (nextTo some River)
+dialogue5: str = "Hotels near the sea."
+query5: Hotel and (nextTo some Sea)
+
+
+Five complex dialogues (4+ constructs)
+
+dialogue6: str = "I want a hotel with a sauna and a swimming pool, preferrably in Portugal near a train station." #for instance acco0
+query6: Hotel and (hasFacility value Sauna) and (hasFacility value Swimming_Pool) and (inCountry value Portugal) and (nextTo some TrainStation)
+
+dialogue7: str = "Find me a hotel that is also a michelin restaurant in France. They should have free parking and a 24h front desk too."
+query7: Hotel and (restaurantType value Michelin) and Restaurant and (inCountry value France) and (hasFacility value Free_Parking) and (hasFacility value 24h_front_desk)
+
+dialogue8: str = "Can you find me a hostel in Porto with an airport shuttle. It would be nice if it is within walking distance from a museum."
+query8: Hostel and (inCity value Porto) and (hasFacility value Airport_Shuttle) and (walkingDistance some Museum)
+
+dialogue9: str = "I want a French Restaurant in Turkey right by the sea with free wifi." #acco 36
+query9: (nationality value French) and Restaurant and (inCountry value Turkey) and (nextTo some Sea) and (hasFacility value Free_Wifi)
+
+dialogue10: str = "I want a hotel that has a restaurant with private bathrooms. Preferrably rated highly."
+query10: Hotel and (hasFacility value RestaurantInHotel) and (hasFacility value Private_Bathroom) and (userRating some HighRating)
