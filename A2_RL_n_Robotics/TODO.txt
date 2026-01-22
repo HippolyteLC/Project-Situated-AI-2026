@@ -2,5 +2,6 @@ TO-DO LIST:
 - run experiments multiple times for std+mean for FetchReachDense-v4 + plot/graph for this
 - for task 1.4 (HER) we are expected to either a) choose either ReachDense or Reach and justify why we chose one or the other, or
                                                b) we can do both and compare
+maybe re-run all tasks with 50k timesteps?
 
 current progress: up till task 1.3 (and including), bit of progress for task 1.4
