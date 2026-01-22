@@ -1,0 +1,4 @@
+TO-DO LIST:
+- run experiments multiple times for std+mean for FetchReachDense-v4 + plot/graph for this
+
+current progress: up till task 1.3 (and including)
