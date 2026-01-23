@@ -144,14 +144,56 @@ hyperparams = {
 }
 
 --------
-(TODO) FetchReachDense-v4 || SAC || + HER
+FetchReachDense-v4 || SAC || + HER
 
-
+hyperparams = {
+    "FetchReachDense-v4": {
+        "n_timesteps": 300_000,
+        "policy": "MultiInputPolicy",
+        "learning_rate": 3e-4,
+        "batch_size": 256,
+        "buffer_size": 1_000_000,
+        "learning_starts": 5_000,
+        "train_freq": 1,
+        "gradient_steps": 1,
+        "gamma": 0.98,
+        "tau": 0.02,
+        "ent_coef": "auto",
+        "policy_kwargs": "dict(net_arch=[256, 256])",
+        "replay_buffer_class": "HerReplayBuffer",
+        "replay_buffer_kwargs": {
+            "n_sampled_goal": 4,
+            "goal_selection_strategy": "future",
+        },
+    }
+}
 
 --------
-(TODO) FetchReachDense-v4 || TD3 || + HER
+FetchReachDense-v4 || TD3 || + HER
 
-
+hyperparams = {
+    "FetchReachDense-v4": {
+        "n_timesteps": 300_000,
+        "policy": "MultiInputPolicy",
+        "learning_rate": 1e-3,
+        "batch_size": 256,
+        "buffer_size": 1_000_000,
+        "learning_starts": 5_000,
+        "train_freq": 1,
+        "gradient_steps": 1,
+        "gamma": 0.98,
+        "tau": 0.02,
+        "policy_delay": 2,
+        "target_policy_noise": 0.2,
+        "target_noise_clip": 0.5,
+        "policy_kwargs": "dict(net_arch=[256, 256])",
+        "replay_buffer_class": "HerReplayBuffer",
+        "replay_buffer_kwargs": {
+            "n_sampled_goal": 4,
+            "goal_selection_strategy": "future",
+        },
+    }
+}
 
 --------
 (TODO) FetchReachDense-v4 || DDPG || lower mass
