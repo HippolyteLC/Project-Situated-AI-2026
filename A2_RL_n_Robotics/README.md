@@ -1,4 +1,5 @@
-`A2_RL_n_Robotics
+<code>
+A2_RL_n_Robotics
     ├── hyperparams.txt         the .txt file containing all hyperparameters for all experiments
     ├── hyperparams.yaml        the .yaml file containing hyperparameters for the most recent experiment (this file is NOT important)
     ├── logs/
@@ -30,4 +31,4 @@
     ├── TODO.txt        TODO/notes for our own convenience
     └── videos/     all output videos for each experiment
         ├── ...
-`
+</code>
