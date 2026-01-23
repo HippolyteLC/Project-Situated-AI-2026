@@ -1,5 +1,10 @@
 TO-DO LIST:
 - run experiments multiple times for std+mean for FetchReachDense-v4 + plot/graph for this
 - for task 1.4 (HER) we are expected to justify the choice of ReachDense
+- i am unable to do task 1.5 (i dont have the file for some reason)
+- all other explanations up till task 1.4 are not yet done
 
 current progress: up till task 1.4 (and including)
+
+question to ask TA:
+for task 1.2 do they expect multiple TRAININGs for STD/Mean or multiple EVALUATIONS?

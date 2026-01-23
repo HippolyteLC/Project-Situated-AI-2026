@@ -1,19 +1,23 @@
 !!python/object/apply:collections.OrderedDict
 - - - batch_size
-    - 128
+    - 256
+  - - buffer_size
+    - 1000000
+  - - gamma
+    - 0.98
   - - gradient_steps
     - 1
   - - learning_rate
     - 0.001
+  - - learning_starts
+    - 5000
   - - n_timesteps
-    - 50000
-  - - noise_std
-    - 0.2
-  - - noise_type
-    - ornstein-uhlenbeck
+    - 300000
   - - policy
     - MultiInputPolicy
   - - policy_kwargs
-    - dict(net_arch=[256, 256, 256])
+    - dict(net_arch=[256, 256])
+  - - tau
+    - 0.02
   - - train_freq
     - 1
