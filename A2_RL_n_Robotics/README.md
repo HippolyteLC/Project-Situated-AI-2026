@@ -37,5 +37,6 @@ To ensure the correct parameters are applied to each task, follow these guidelin
 | `all_videos/` | Rendered videos for Tasks 1, 2, and 3. |
 | `task1.2_graphs/` | Data files used for Task 1.2 graph generation. |
 | `images/` | Alternative graphs used in the final research paper. |
+| `ROB_RL_PSAI_PAPER_redacted` | Final report with student numbers redacted (original paper is submitted on Canvas). |
 
 ---
