@@ -1,0 +1,25 @@
+Loading logs/sac/FetchReachDense-v4_1/best_model.zip
+Episode Reward: -1.47
+Episode Length 50
+Episode Reward: -0.79
+Episode Length 50
+Episode Reward: -0.26
+Episode Length 50
+Episode Reward: -1.91
+Episode Length 50
+Episode Reward: -0.43
+Episode Length 50
+Episode Reward: -0.32
+Episode Length 50
+Episode Reward: -1.64
+Episode Length 50
+Episode Reward: -0.47
+Episode Length 50
+Episode Reward: -0.77
+Episode Length 50
+Episode Reward: -0.61
+Episode Length 50
+Success rate: 100.00%
+10 Episodes
+Mean reward: -0.87 +/- 0.56
+Mean episode length: 50.00 +/- 0.00
