@@ -1,8 +1,8 @@
-# Project Group 14 - Task 1, 2 & 3
+# Project Group 14 - RL & Robotics
 
 This repository contains the code, data, and rendered results for Tasks 1, 2, and 3. Due to file size constraints, please follow the instructions below to properly run and view the project.
 
-## 📓 Main Notebook
+## Main Notebook
 The primary workflow is contained in:  
 **`final_notebook_group_14.ipynb`**
 
@@ -10,7 +10,7 @@ The primary workflow is contained in:
 
 ---
 
-## 🚀 Setup & External Data
+## Setup & External Data
 To run the full notebook, you must download the execution logs locally:
 * **Download Logs:** [Google Drive Link](https://drive.google.com/file/d/1pmn4xRDy2Ss3cryG5Cy5ldd9Yg0ePt5u/view?usp=sharing)
 * *If access is restricted, please request permission via the link.*
@@ -22,16 +22,15 @@ The following scripts are essential for the notebook to function correctly:
 
 ---
 
-## 📊 Hyperparameters
+## Hyperparameters
 To ensure the correct parameters are applied to each task, follow these guidelines:
 
 * **Task 1:** Found in the `hyperparams.txt` file.
 * **Tasks 2 & 3:** Contained in the `.yaml` files.
-* **Recommendation:** Use the provided code within the final notebook to **render these anew**. This prevents potential hyperparameter mismatches across tasks.
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 | Folder | Content |
 | :--- | :--- |
