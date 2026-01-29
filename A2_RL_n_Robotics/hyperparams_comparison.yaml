@@ -1,0 +1,24 @@
+FetchPickAndPlaceModified-v0:
+  n_timesteps: 200000
+  policy: MultiInputPolicy
+  learning_rate: 0.001
+  batch_size: 2048
+  buffer_size: 200000
+  gamma: 0.98
+  tau: 0.05
+  replay_buffer_class: HerReplayBuffer
+  replay_buffer_kwargs: dict(n_sampled_goal=4, goal_selection_strategy='future')
+  policy_kwargs: dict(net_arch=[512, 512, 512], n_quantiles=25)
+  top_quantiles_to_drop_per_net: 2
+FetchPickAndPlace-v4:
+  n_timesteps: 200000
+  policy: MultiInputPolicy
+  learning_rate: 0.001
+  batch_size: 2048
+  buffer_size: 200000
+  gamma: 0.98
+  tau: 0.05
+  replay_buffer_class: HerReplayBuffer
+  replay_buffer_kwargs: dict(n_sampled_goal=4, goal_selection_strategy='future')
+  policy_kwargs: dict(net_arch=[512, 512, 512], n_quantiles=25)
+  top_quantiles_to_drop_per_net: 2

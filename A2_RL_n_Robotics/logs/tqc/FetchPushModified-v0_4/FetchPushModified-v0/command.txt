@@ -1,1 +1,0 @@
-python3 -m rl_zoo3.train --algo tqc --env FetchPushModified-v0 --gym-packages modified_env -c hyperparams.yaml --seed 42 --save-freq 100000
