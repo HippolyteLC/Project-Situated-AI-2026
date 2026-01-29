@@ -196,9 +196,20 @@ hyperparams = {
 }
 
 --------
-(TODO) FetchReachDense-v4 || DDPG || lower mass
+FetchReachDense-v4 || DDPG || lower mass
 
-
-
---------
-(TODO) FetchPushDense-v4 || DDPG || + curriculum learning(?)
+hyperparams = {
+    "FetchReachDense-v4": {
+        "n_timesteps": 300_000,
+        "policy": "MultiInputPolicy",
+        "learning_rate": 1e-3,
+        "batch_size": 256,
+        "buffer_size": 1_000_000,
+        "learning_starts": 5_000,
+        "train_freq": 1,
+        "gradient_steps": 1,
+        "gamma": 0.98,
+        "tau": 0.02,
+        "policy_kwargs": "dict(net_arch=[256, 256])",
+    }
+}
